@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>飘逸的肉猪</title>
+  <subtitle>一个苦逼程序员的日常</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mixi9527.github.io/"/>
+  <updated>2017-06-23T00:19:39.000Z</updated>
+  <id>http://mixi9527.github.io/</id>
+  
+  <author>
+    <name>mixi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔</title>
+    <link href="http://mixi9527.github.io/2017/06/22/%E9%9A%8F%E7%AC%94/"/>
+    <id>http://mixi9527.github.io/2017/06/22/随笔/</id>
+    <published>2017-06-22T08:49:35.000Z</published>
+    <updated>2017-06-23T00:19:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.<br>一来可以在上面记录一下自己工作中遇到的问题<br>二来可以记录一下我们家小帅哥的日常<br>第三点嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.<br>关于这个博客的文章质量嘛,大家纯属看热闹吧.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.&lt;br&gt;一来可以在上面记录一下自己工作中遇到的问题&lt;br&gt;二来可以记录一下我们家小帅哥的日常&lt;br&gt;第三点嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.&lt;br&gt;关于这个
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
