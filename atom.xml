@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mixi9527.github.io/"/>
-  <updated>2017-06-23T07:07:21.000Z</updated>
+  <updated>2017-06-23T07:50:51.000Z</updated>
   <id>http://mixi9527.github.io/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>满哥都快10个月了</title>
+    <link href="http://mixi9527.github.io/2017/06/23/%E6%BB%A1%E5%93%A5%E8%AE%B0/"/>
+    <id>http://mixi9527.github.io/2017/06/23/满哥记/</id>
+    <published>2017-06-23T07:45:37.000Z</published>
+    <updated>2017-06-23T07:50:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一转眼 满哥都快10个月了<br>从最开始的翻身都很难 到现在的能爬了<br>时间过得真快啊 自己也30出头了 即将奔向40大关<br>到现在 还只是一个小小的程序猿<br>我时常会反思 接下来的路应该怎么走<br>思前想后 发现没有别的路可以走 只能继续走程序猿这条路<br>只能不断的提升自己的技术 做一个更牛逼的人<br>革命尚未成功 同志还需努力</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一转眼 满哥都快10个月了&lt;br&gt;从最开始的翻身都很难 到现在的能爬了&lt;br&gt;时间过得真快啊 自己也30出头了 即将奔向40大关&lt;br&gt;到现在 还只是一个小小的程序猿&lt;br&gt;我时常会反思 接下来的路应该怎么走&lt;br&gt;思前想后 发现没有别的路可以走 只能继续走程序猿这条路&lt;b
+    
+    </summary>
+    
+      <category term="生活" scheme="http://mixi9527.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="满哥" scheme="http://mixi9527.github.io/tags/%E6%BB%A1%E5%93%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS runtime</title>
@@ -45,7 +68,7 @@
     <link href="http://mixi9527.github.io/2017/06/23/%E9%9A%8F%E7%AC%94/"/>
     <id>http://mixi9527.github.io/2017/06/23/随笔/</id>
     <published>2017-06-23T03:48:12.000Z</published>
-    <updated>2017-06-23T04:57:33.000Z</updated>
+    <updated>2017-06-23T07:46:59.000Z</updated>
     
     <content type="html"><![CDATA[<p>以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.<br>一来可以在上面记录一下自己工作中遇到的问题<br>二来嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.<br>关于这个博客的文章质量嘛,大家纯属看热闹吧.<br>先mark一下MD的基本语法…</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Never giveup</div></pre></td></tr></table></figure>

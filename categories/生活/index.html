@@ -6,19 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://mixi9527.github.io">
-  <title>iOS runtime | 飘逸的肉猪</title>
+  <title>Category: 生活 | 飘逸的肉猪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法交换 12345678910111213141516171819#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;#import &amp;lt;objc/runtime.h&amp;gt;@implementation UINaviationController (MethodExchange)- (void)load &amp;#123;    s">
-<meta name="keywords" content="iOS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="iOS runtime">
-<meta property="og:url" content="http://mixi9527.github.io/2017/06/23/iOS runtime/index.html">
+  <meta name="description" content="iOS PHP 满哥">
+<meta property="og:type" content="website">
+<meta property="og:title" content="飘逸的肉猪">
+<meta property="og:url" content="http://mixi9527.github.io/categories/生活/index.html">
 <meta property="og:site_name" content="飘逸的肉猪">
-<meta property="og:description" content="方法交换 12345678910111213141516171819#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;#import &amp;lt;objc/runtime.h&amp;gt;@implementation UINaviationController (MethodExchange)- (void)load &amp;#123;    s">
-<meta property="og:updated_time" content="2017-06-23T07:07:21.000Z">
+<meta property="og:description" content="iOS PHP 满哥">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS runtime">
-<meta name="twitter:description" content="方法交换 12345678910111213141516171819#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;#import &amp;lt;objc/runtime.h&amp;gt;@implementation UINaviationController (MethodExchange)- (void)load &amp;#123;    s">
+<meta name="twitter:title" content="飘逸的肉猪">
+<meta name="twitter:description" content="iOS PHP 满哥">
   
     <link rel="alternative" href="/atom.xml" title="飘逸的肉猪" type="application/atom+xml">
   
@@ -146,99 +144,71 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-iOS runtime" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      iOS runtime
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/06/23/满哥记/" class="archive-article-date">
+  	<time datetime="2017-06-23T07:45:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/06/23/满哥记/">满哥都快10个月了</a>
     </h1>
   
 
-        
-        <a href="/2017/06/23/iOS runtime/" class="archive-article-date">
-  	<time datetime="2017-06-23T07:07:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>方法交换</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#import &quot;UINaviationController+MethodExchange.h&quot;</div><div class="line">#import &lt;objc/runtime.h&gt;</div><div class="line"></div><div class="line">@implementation UINaviationController (MethodExchange)</div><div class="line"></div><div class="line">- (void)load &#123;</div><div class="line">    static dispatch_once_t onceToken;</div><div class="line">    dispatch_once(&amp;onceToken, ^&#123;</div><div class="line">        Class class = [self class];</div><div class="line">        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated &#123;</div><div class="line">    if (self.viewControllers.count == 1) &#123;</div><div class="line">        [viewController setHidesBottomBarWhenPushed:YES];</div><div class="line">    &#125;</div><div class="line">    [self mmpushViewController:viewController animated:animated];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">满哥</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
+        			<a href="/categories/生活/" class="article-tag-list-link color3">生活</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/06/23/满哥记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          满哥都快10个月了
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/06/23/随笔/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">开始吧 骚年</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
+    
 
 
           </div>
@@ -261,10 +231,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		root: "/",
 		innerArchive: true,
