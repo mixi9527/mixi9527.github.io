@@ -159,7 +159,7 @@
 
         
         <a href="/2017/06/23/iOS runtime/" class="archive-article-date">
-  	<time datetime="2017-06-23T04:53:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
+  	<time datetime="2017-06-23T05:10:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
 </a>
         
       </header>
@@ -167,23 +167,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>方法交换</p>
-<pre><code>#import &quot;UINaviationController+MethodExchange.h&quot;
-#import &lt;objc/runtime.h&gt;
-@implementation UINaviationController (MethodExchange)
-- (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        Class class = [self class];
-        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));
-    });
-}
-- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    if (self.viewControllers.count == 1) {
-        [viewController setHidesBottomBarWhenPushed:YES];
-    }
-    [self mmpushViewController:viewController animated:animated];
-}
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#import &quot;UINaviationController+MethodExchange.h&quot;</div><div class="line">#import &lt;objc/runtime.h&gt;</div><div class="line"></div><div class="line">@implementation UINaviationController (MethodExchange)</div><div class="line"></div><div class="line">- (void)load &#123;</div><div class="line">    static dispatch_once_t onceToken;</div><div class="line">    dispatch_once(&amp;onceToken, ^&#123;</div><div class="line">        Class class = [self class];</div><div class="line">        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated &#123;</div><div class="line">    if (self.viewControllers.count == 1) &#123;</div><div class="line">        [viewController setHidesBottomBarWhenPushed:YES];</div><div class="line">    &#125;</div><div class="line">    [self mmpushViewController:viewController animated:animated];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
 
       
