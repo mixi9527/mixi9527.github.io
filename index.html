@@ -161,7 +161,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/23/随笔/">随笔</a>
+      <a class="article-title" href="/2017/06/23/随笔/">开始吧 骚年</a>
     </h1>
   
 
@@ -191,13 +191,13 @@
 </blockquote>
 <p>引用的区块内也可以使用其他的 Markdown 语法,包括标题、列表、代码区块等:</p>
 <blockquote>
-<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ol>
+<p>##这是一个标题.</p>
+<ol>
 <li>这是第一行列表项。</li>
 <li>这是第二行列表项。</li>
 </ol>
-<p>给出一些例子代码：</p>
-<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
-</code></pre></blockquote>
+<p>给出一些例子代码：<br>    return shell_exec(“echo $input | $markdown_script”);</p>
+</blockquote>
 <h1 id="h1标签"><a href="#h1标签" class="headerlink" title="h1标签"></a>h1标签</h1><pre><code>This is an H1
 =============
 </code></pre><h2 id="h2标签"><a href="#h2标签" class="headerlink" title="h2标签"></a>h2标签</h2><pre><code>This is an H2
@@ -222,12 +222,15 @@
 <ol>
 <li>Bird</li>
 <li>McHale</li>
+<li><p>Parish</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
 <li>Parish</li>
 </ol>
-<pre><code>1. Bird
-5. McHale
-422. Parish
-</code></pre><p>等同于:</p>
+</li>
+</ol>
+<p>等同于:</p>
 <pre><code>&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;McHale&lt;/li&gt;
