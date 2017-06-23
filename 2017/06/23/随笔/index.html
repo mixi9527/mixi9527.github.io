@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://mixi9527.github.io/2017/06/23/随笔/index.html">
 <meta property="og:site_name" content="飘逸的肉猪">
 <meta property="og:description" content="以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.一来可以在上面记录一下自己工作中遇到的问题二来嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.关于这个博客的文章质量嘛,大家纯属看热闹吧. 1Never giveup 插入一个表格:             Foo        Foo        Foo        Foo">
-<meta property="og:updated_time" content="2017-06-23T03:06:48.000Z">
+<meta property="og:updated_time" content="2017-06-23T03:15:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="随笔">
 <meta name="twitter:description" content="以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.一来可以在上面记录一下自己工作中遇到的问题二来嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.关于这个博客的文章质量嘛,大家纯属看热闹吧. 1Never giveup 插入一个表格:             Foo        Foo        Foo        Foo">
@@ -167,7 +167,7 @@
 
         
         <a href="/2017/06/23/随笔/" class="archive-article-date">
-  	<time datetime="2017-06-23T03:06:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
+  	<time datetime="2017-06-23T03:15:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
 </a>
         
       </header>
@@ -204,9 +204,11 @@
 <p>给出一些例子代码：</p>
 <pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
 </code></pre></blockquote>
-<h1 id="h1标签"><a href="#h1标签" class="headerlink" title="h1标签"></a>h1标签</h1>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">This is an H1</div><div class="line">=============</div></pre></td></tr></table></figure>
-<h2 id="h2标签"><a href="#h2标签" class="headerlink" title="h2标签"></a>h2标签</h2>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">This is an H2</div><div class="line">-------------</div></pre></td></tr></table></figure>
-<p>无序列表 <code>-</code> <code>+</code> <code>*</code>用法一致:</p>
+<h1 id="h1标签"><a href="#h1标签" class="headerlink" title="h1标签"></a>h1标签</h1><pre><code>This is an H1
+=============
+</code></pre><h2 id="h2标签"><a href="#h2标签" class="headerlink" title="h2标签"></a>h2标签</h2><pre><code>This is an H2
+-------------
+</code></pre><p>无序列表 <code>-</code> <code>+</code> <code>*</code>用法一致:</p>
 <ul>
 <li><code>------------</code></li>
 </ul>
@@ -217,13 +219,27 @@
 <li><code>************</code></li>
 </ul>
 <p>有序列表 数字 <code>1或2或3(不影响html输出)</code> 后面跟一个英文的点 <code>.</code> :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. Bird</div><div class="line">5. McHale</div><div class="line">422. Parish</div></pre></td></tr></table></figure>
-<p>等同于:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">&lt;li&gt;Bird&lt;/li&gt;</div><div class="line">&lt;li&gt;McHale&lt;/li&gt;</div><div class="line">&lt;li&gt;Parish&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure>
-<p>h标签:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">* 这是h1</div><div class="line">    # h1 </div><div class="line">* 这是h2</div><div class="line">    ## h2</div><div class="line">* 这是h3</div><div class="line">    ### h3</div></pre></td></tr></table></figure></p>
-<ul>
+<pre><code>1. Bird
+5. McHale
+422. Parish
+</code></pre><p>等同于:</p>
+<pre><code>&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre><p>h标签:</p>
+<pre><code>* 这是h1
+    # h1 
+* 这是h2
+    ## h2
+* 这是h3
+    ### h3
+</code></pre><ul>
 <li><p>一列表项包含一个列表区块：</p>
 <pre><code>echo &quot;hello world&quot;;
+echo &quot;hello world&quot;;
+echo &quot;hello world&quot;;
 </code></pre></li>
 </ul>
 <p>这是一个普通段落:</p>
@@ -234,31 +250,26 @@
 end tell
 </code></pre><p>超链接:</p>
 <ol>
-<li><p>This is <a href="http://example.com/" title="Title" target="_blank" rel="external">an example</a> inline link.</p>
-</li>
-<li><p><a href="http://example.net/" target="_blank" rel="external">This link</a> has no title attribute.</p>
-</li>
-<li><p>This is <a href="http://example.com/" title="Optional Title Here" target="_blank" rel="external">an example</a> reference-style link.</p>
-</li>
-</ol>
-<ol>
+<li>This is <a href="http://example.com/" title="Title" target="_blank" rel="external">an example</a> inline link.</li>
+<li><a href="http://example.net/" target="_blank" rel="external">This link</a> has no title attribute.</li>
+<li>This is <a href="http://example.com/" title="Optional Title Here" target="_blank" rel="external">an example</a> reference-style link.</li>
 <li>See my <a href="/about/">About</a> page for details.</li>
 </ol>
 <p>链接样式:</p>
 <blockquote>
-<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [Google] [1] than from</div><div class="line">[Yahoo] [2] or [MSN] [3].</div><div class="line"></div><div class="line">  [1]: http://google.com/        &quot;Google&quot;</div><div class="line">  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;</div><div class="line">  [3]: http://search.msn.com/    &quot;MSN Search&quot;</div></pre></td></tr></table></figure>
 <p>行内样式:</p>
 <blockquote>
-<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or<br><a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;) than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or</div><div class="line">[MSN](http://search.msn.com/ &quot;MSN Search&quot;).</div><div class="line">&gt;</div></pre></td></tr></table></figure>
 <p><strong>加粗</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">**文字**</div></pre></td></tr></table></figure>
 <p><strong>斜体字</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">__文字__</div></pre></td></tr></table></figure>
-<p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>` </code>），例如:<br>Use the <code>printf()</code> function.</p>
+<p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>` </code>），例如: Use the <code>printf()</code> function.</p>
 <p><code>Use the `printf()` function.</code></p>
 <p><a href="http://example.com/" target="_blank" rel="external">http://example.com/</a></p>
 
