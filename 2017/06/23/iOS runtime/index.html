@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://mixi9527.github.io/2017/06/23/iOS runtime/index.html">
 <meta property="og:site_name" content="飘逸的肉猪">
 <meta property="og:description" content="方法交换 1234567891011121314151617181920#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;#import &amp;lt;objc/runtime.h&amp;gt;@implementation UINaviationController (MethodExchange)- (void)load &amp;#123;">
-<meta property="og:updated_time" content="2017-06-23T05:20:23.000Z">
+<meta property="og:updated_time" content="2017-06-23T05:21:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS runtime">
 <meta name="twitter:description" content="方法交换 1234567891011121314151617181920#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;#import &amp;lt;objc/runtime.h&amp;gt;@implementation UINaviationController (MethodExchange)- (void)load &amp;#123;">
@@ -168,6 +168,7 @@
       
         <p>方法交换</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#import &quot;UINaviationController+MethodExchange.h&quot;</div><div class="line">#import &lt;objc/runtime.h&gt;</div><div class="line"></div><div class="line">@implementation UINaviationController (MethodExchange)</div><div class="line"></div><div class="line">- (void)load &#123;</div><div class="line">    static dispatch_once_t onceToken;</div><div class="line">    dispatch_once(&amp;onceToken, ^&#123;</div><div class="line">        Class class = [self class];</div><div class="line">        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated &#123;</div><div class="line">    if (self.viewControllers.count == 1) &#123;</div><div class="line">        [viewController setHidesBottomBarWhenPushed:YES];</div><div class="line">    &#125;</div><div class="line">    [self mmpushViewController:viewController animated:animated];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(<span class="string">"dadawdad"</span>);</div></pre></td></tr></table></figure>
       
 
       
