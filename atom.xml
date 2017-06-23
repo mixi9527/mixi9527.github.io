@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mixi9527.github.io/"/>
-  <updated>2017-06-23T04:04:37.000Z</updated>
+  <updated>2017-06-23T05:06:02.000Z</updated>
   <id>http://mixi9527.github.io/</id>
   
   <author>
@@ -17,10 +17,52 @@
   
   <entry>
     <title>开始吧 骚年</title>
+    <link href="http://mixi9527.github.io/2017/06/23/iOS%20runtime/"/>
+    <id>http://mixi9527.github.io/2017/06/23/iOS runtime/</id>
+    <published>2017-06-23T04:53:15.000Z</published>
+    <updated>2017-06-23T05:06:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>方法交换</p>
+<pre><code>#import &quot;UINaviationController+MethodExchange.h&quot;
+#import &lt;objc/runtime.h&gt;
+@implementation UINaviationController (MethodExchange)
+- (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        Class class = [self class];
+        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));
+    });
+}
+- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.viewControllers.count == 1) {
+        [viewController setHidesBottomBarWhenPushed:YES];
+    }
+    [self mmpushViewController:viewController animated:animated];
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;方法交换&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#import &amp;quot;UINaviationController+MethodExchange.h&amp;quot;
+#import &amp;lt;objc/runtime.h&amp;gt;
+@implementation UINaviation
+    
+    </summary>
+    
+      <category term="blog" scheme="http://mixi9527.github.io/categories/blog/"/>
+    
+    
+      <category term="随笔" scheme="http://mixi9527.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始吧 骚年</title>
     <link href="http://mixi9527.github.io/2017/06/23/%E9%9A%8F%E7%AC%94/"/>
     <id>http://mixi9527.github.io/2017/06/23/随笔/</id>
     <published>2017-06-23T03:48:12.000Z</published>
-    <updated>2017-06-23T04:04:37.000Z</updated>
+    <updated>2017-06-23T04:57:33.000Z</updated>
     
     <content type="html"><![CDATA[<p>以前一直想弄一个自己的blog来着,一直都没时间(其实是自己太懒),今天抽空决定搞一个起来.<br>一来可以在上面记录一下自己工作中遇到的问题<br>二来嘛,听说作为一个程序猿,没有一个自己的博客是件很丢脸的事情.<br>关于这个博客的文章质量嘛,大家纯属看热闹吧.<br>先mark一下MD的基本语法…</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Never giveup</div></pre></td></tr></table></figure>
@@ -86,11 +128,11 @@
 &lt;/ol&gt;
 </code></pre><p>h标签:</p>
 <pre><code>* 这是h1
-    # h1 
+    # h1
 * 这是h2
     ## h2
 * 这是h3
-    ### h3    
+    ### h3
 </code></pre><p>这是一个普通段落:</p>
 <pre><code>这是一个代码区块。
 </code></pre><p>Here is an example of AppleScript:</p>

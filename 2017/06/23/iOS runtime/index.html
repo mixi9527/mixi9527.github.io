@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://mixi9527.github.io">
-  <title>Archives: 2017 | 飘逸的肉猪</title>
+  <title>开始吧 骚年 | 飘逸的肉猪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="iOS PHP 满哥">
-<meta property="og:type" content="website">
-<meta property="og:title" content="飘逸的肉猪">
-<meta property="og:url" content="http://mixi9527.github.io/archives/2017/index.html">
+  <meta name="description" content="方法交换 #import &amp;quot;UINaviationController+MethodExchange.h&amp;quot; #import &amp;lt;objc/runtime.h&amp;gt; @implementation UINaviationController (MethodExchange) - (void)load {     static dispatch_once_t onceToke">
+<meta name="keywords" content="随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开始吧 骚年">
+<meta property="og:url" content="http://mixi9527.github.io/2017/06/23/iOS runtime/index.html">
 <meta property="og:site_name" content="飘逸的肉猪">
-<meta property="og:description" content="iOS PHP 满哥">
+<meta property="og:description" content="方法交换 #import &amp;quot;UINaviationController+MethodExchange.h&amp;quot; #import &amp;lt;objc/runtime.h&amp;gt; @implementation UINaviationController (MethodExchange) - (void)load {     static dispatch_once_t onceToke">
+<meta property="og:updated_time" content="2017-06-23T05:06:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="飘逸的肉猪">
-<meta name="twitter:description" content="iOS PHP 满哥">
+<meta name="twitter:title" content="开始吧 骚年">
+<meta name="twitter:description" content="方法交换 #import &amp;quot;UINaviationController+MethodExchange.h&amp;quot; #import &amp;lt;objc/runtime.h&amp;gt; @implementation UINaviationController (MethodExchange) - (void)load {     static dispatch_once_t onceToke">
   
     <link rel="alternative" href="/atom.xml" title="飘逸的肉猪" type="application/atom+xml">
   
@@ -144,36 +146,51 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-iOS runtime" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      开始吧 骚年
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/23/iOS runtime/" class="archive-article-date">
+
+        
+        <a href="/2017/06/23/iOS runtime/" class="archive-article-date">
   	<time datetime="2017-06-23T04:53:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/23/iOS runtime/">开始吧 骚年</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>方法交换</p>
+<pre><code>#import &quot;UINaviationController+MethodExchange.h&quot;
+#import &lt;objc/runtime.h&gt;
+@implementation UINaviationController (MethodExchange)
+- (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        Class class = [self class];
+        method_exchangeImplementations(class_getInstanceMethod(class, @selector(pushViewController:animated:)), class_getInstanceMethod(class, @selector(mmpushViewController:animated:)));
+    });
+}
+- (void)mmpushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.viewControllers.count == 1) {
+        [viewController setHidesBottomBarWhenPushed:YES];
+    }
+    [self mmpushViewController:viewController animated:animated];
+}
+</code></pre>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -185,7 +202,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -198,66 +215,36 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/23/随笔/" class="archive-article-date">
-  	<time datetime="2017-06-23T03:48:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/23/随笔/">开始吧 骚年</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/blog/" class="article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/06/23/随笔/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">开始吧 骚年</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -280,8 +267,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
