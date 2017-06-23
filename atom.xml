@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mixi9527.github.io/"/>
-  <updated>2017-06-23T05:06:02.000Z</updated>
+  <updated>2017-06-23T05:06:33.000Z</updated>
   <id>http://mixi9527.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>开始吧 骚年</title>
+    <title>iOS runtime</title>
     <link href="http://mixi9527.github.io/2017/06/23/iOS%20runtime/"/>
     <id>http://mixi9527.github.io/2017/06/23/iOS runtime/</id>
     <published>2017-06-23T04:53:15.000Z</published>
-    <updated>2017-06-23T05:06:02.000Z</updated>
+    <updated>2017-06-23T05:06:33.000Z</updated>
     
     <content type="html"><![CDATA[<p>方法交换</p>
 <pre><code>#import &quot;UINaviationController+MethodExchange.h&quot;
@@ -50,10 +50,10 @@
     
     </summary>
     
-      <category term="blog" scheme="http://mixi9527.github.io/categories/blog/"/>
+      <category term="技术" scheme="http://mixi9527.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="随笔" scheme="http://mixi9527.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="iOS" scheme="http://mixi9527.github.io/tags/iOS/"/>
     
   </entry>
   
